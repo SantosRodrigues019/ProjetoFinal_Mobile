@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Solicitação</string>
+    <string name="abono">abomo</string>
+    <string name="inicio">inicio</string>
+    <string name="quantidade">quantidade</string>
+    <string name="fim">fim</string>
+    <string name="mascara">"__/__/__"</string>
+    <string name="registrar">"registrar"</string>
+    <string name="titulo">SOLICITAÇÃO</string>
+    <string name="sim">sim</string>
+    <string name="nao">nao</string>
+    <string name="diasferias">dias_ferias</string>
+</resources>

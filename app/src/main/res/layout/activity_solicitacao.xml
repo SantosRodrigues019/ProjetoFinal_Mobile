@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SolicitacaoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:background="@color/blue"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abono" />
+
+        <RadioGroup
+            android:id="@+id/groupTipoViagem"
+            android:orientation="horizontal"
+            android:onClick="onRadioClick">
+
+            <RadioButton
+                android:id="@+id/radiosim"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/sim" />
+
+            <RadioButton
+                android:id="@+id/radionao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/nao" />
+        </RadioGroup>
+
+</TableRow>
+            <TableRow>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tipoGasto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicio" />
+
+
+                <Button
+                    android:id="@+id/btnData"
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSelecionar"
+                    android:text="@string/mascara" />
+
+            </TableRow>
+
+             <TableRow>
+
+                 <TextView
+                     android:id="@+id/quantidade"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/quantidade">
+
+                 </TextView>
+                 <Spinner
+                     android:id="@+id/spndiasferias"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:prompt="@string/diasferias" />
+
+             </TableRow>
+
+        <TableRow>
+                <TextView
+                    android:id="@+id/fim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fim" />
+                <TextView
+                    android:id="@+id/dtfim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"/>
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnregistrar"
+                android:onClick="onCadastrar"
+                android:text="@string/registrar" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
